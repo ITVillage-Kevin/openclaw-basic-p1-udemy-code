@@ -1,0 +1,8 @@
+TODO – Local AI Agent Demo
+
+- [x] Install Docker and WSL2 on Windows.
+- [x] Run OpenClaw and complete the onboarding.
+- [x] Connect Gemini 2.5 Flash with an API key.
+- [ ] Ask the agent to read `notes-1.md` and `notes-2.md`.
+- [ ] Generate a `project-summary.txt` report in the same folder.
+- [ ] Review the report and decide next steps.

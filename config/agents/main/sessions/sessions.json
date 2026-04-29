@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
-    "sessionId": "be894186-156f-4bb6-90ed-fbaa9f4620b9",
-    "updatedAt": 1773841573803,
+    "sessionId": "0b639905-1758-42ea-9a20-bdb3f5a15a0a",
+    "updatedAt": 1775441203475,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -14,11 +14,17 @@
       "surface": "webchat",
       "chatType": "direct"
     },
-    "sessionFile": "/home/node/.openclaw/agents/main/sessions/be894186-156f-4bb6-90ed-fbaa9f4620b9.jsonl",
+    "sessionFile": "/home/node/.openclaw/agents/main/sessions/0b639905-1758-42ea-9a20-bdb3f5a15a0a.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/app/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>/app/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>/app/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>/app/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawflow</name>\n    <description>Use when work should span one or more detached tasks but still behave like one job with a single owner context. ClawFlow is the runtime substrate under authoring layers like Lobster, acpx, or plain code. Keep conditional logic in the caller; use ClawFlow for flow identity, waiting, outputs, and user-facing emergence.</description>\n    <location>/app/skills/clawflow/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawflow-inbox-triage</name>\n    <description>Example ClawFlow authoring pattern for inbox triage. Use when messages need different treatment based on intent, with some routes notifying immediately, some waiting on outside answers, and others rolling into a later summary.</description>\n    <location>/app/skills/clawflow-inbox-triage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/app/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>/app/skills/node-connect/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>/app/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>/app/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
+        {
+          "name": "clawflow"
+        },
+        {
+          "name": "clawflow-inbox-triage"
+        },
         {
           "name": "healthcheck"
         },
@@ -35,11 +41,48 @@
       ],
       "resolvedSkills": [
         {
+          "name": "clawflow",
+          "description": "Use when work should span one or more detached tasks but still behave like one job with a single owner context. ClawFlow is the runtime substrate under authoring layers like Lobster, acpx, or plain code. Keep conditional logic in the caller; use ClawFlow for flow identity, waiting, outputs, and user-facing emergence.",
+          "filePath": "/app/skills/clawflow/SKILL.md",
+          "baseDir": "/app/skills/clawflow",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/app/skills/clawflow/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/app/skills/clawflow"
+          },
+          "disableModelInvocation": false
+        },
+        {
+          "name": "clawflow-inbox-triage",
+          "description": "Example ClawFlow authoring pattern for inbox triage. Use when messages need different treatment based on intent, with some routes notifying immediately, some waiting on outside answers, and others rolling into a later summary.",
+          "filePath": "/app/skills/clawflow-inbox-triage/SKILL.md",
+          "baseDir": "/app/skills/clawflow-inbox-triage",
+          "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/app/skills/clawflow-inbox-triage/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/app/skills/clawflow-inbox-triage"
+          },
+          "disableModelInvocation": false
+        },
+        {
           "name": "healthcheck",
           "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
           "filePath": "/app/skills/healthcheck/SKILL.md",
           "baseDir": "/app/skills/healthcheck",
           "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/app/skills/healthcheck/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/app/skills/healthcheck"
+          },
           "disableModelInvocation": false
         },
         {
@@ -48,6 +91,13 @@
           "filePath": "/app/skills/node-connect/SKILL.md",
           "baseDir": "/app/skills/node-connect",
           "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/app/skills/node-connect/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/app/skills/node-connect"
+          },
           "disableModelInvocation": false
         },
         {
@@ -56,6 +106,13 @@
           "filePath": "/app/skills/skill-creator/SKILL.md",
           "baseDir": "/app/skills/skill-creator",
           "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/app/skills/skill-creator/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/app/skills/skill-creator"
+          },
           "disableModelInvocation": false
         },
         {
@@ -64,6 +121,13 @@
           "filePath": "/app/skills/weather/SKILL.md",
           "baseDir": "/app/skills/weather",
           "source": "openclaw-bundled",
+          "sourceInfo": {
+            "path": "/app/skills/weather/SKILL.md",
+            "source": "openclaw-bundled",
+            "scope": "project",
+            "origin": "top-level",
+            "baseDir": "/app/skills/weather"
+          },
           "disableModelInvocation": false
         }
       ],
@@ -76,8 +140,8 @@
     "model": "gemini-2.5-flash",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773841553281,
-      "sessionId": "be894186-156f-4bb6-90ed-fbaa9f4620b9",
+      "generatedAt": 1775441194552,
+      "sessionId": "0b639905-1758-42ea-9a20-bdb3f5a15a0a",
       "sessionKey": "agent:main:main",
       "provider": "google",
       "model": "gemini-2.5-flash",
@@ -96,25 +160,25 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 24743,
-        "projectContextChars": 12024,
-        "nonProjectContextChars": 12719
+        "chars": 26110,
+        "projectContextChars": 12149,
+        "nonProjectContextChars": 13961
       },
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
           "path": "/home/node/workspace/AGENTS.md",
           "missing": false,
-          "rawChars": 8402,
-          "injectedChars": 8402,
+          "rawChars": 7809,
+          "injectedChars": 7809,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "/home/node/workspace/SOUL.md",
           "missing": false,
-          "rawChars": 1369,
-          "injectedChars": 1369,
+          "rawChars": 1664,
+          "injectedChars": 1664,
           "truncated": false
         },
         {
@@ -129,24 +193,24 @@
           "name": "IDENTITY.md",
           "path": "/home/node/workspace/IDENTITY.md",
           "missing": false,
-          "rawChars": 346,
-          "injectedChars": 346,
+          "rawChars": 633,
+          "injectedChars": 633,
           "truncated": false
         },
         {
           "name": "USER.md",
           "path": "/home/node/workspace/USER.md",
           "missing": false,
-          "rawChars": 363,
-          "injectedChars": 363,
+          "rawChars": 474,
+          "injectedChars": 474,
           "truncated": false
         },
         {
           "name": "HEARTBEAT.md",
           "path": "/home/node/workspace/HEARTBEAT.md",
           "missing": false,
-          "rawChars": 167,
-          "injectedChars": 167,
+          "rawChars": 192,
+          "injectedChars": 192,
           "truncated": false
         },
         {
@@ -159,8 +223,16 @@
         }
       ],
       "skills": {
-        "promptChars": 2445,
+        "promptChars": 3283,
         "entries": [
+          {
+            "name": "clawflow",
+            "blockChars": 449
+          },
+          {
+            "name": "clawflow-inbox-triage",
+            "blockChars": 383
+          },
           {
             "name": "healthcheck",
             "blockChars": 456
@@ -180,31 +252,31 @@
         ]
       },
       "tools": {
-        "listChars": 1921,
-        "schemaChars": 7229,
+        "listChars": 1986,
+        "schemaChars": 14771,
         "entries": [
           {
             "name": "read",
             "summaryChars": 298,
-            "schemaChars": 392,
-            "propertiesCount": 4
+            "schemaChars": 560,
+            "propertiesCount": 6
           },
           {
             "name": "edit",
-            "summaryChars": 129,
-            "schemaChars": 591,
-            "propertiesCount": 6
+            "summaryChars": 326,
+            "schemaChars": 1045,
+            "propertiesCount": 5
           },
           {
             "name": "write",
             "summaryChars": 127,
-            "schemaChars": 313,
-            "propertiesCount": 3
+            "schemaChars": 497,
+            "propertiesCount": 5
           },
           {
             "name": "exec",
             "summaryChars": 181,
-            "schemaChars": 1037,
+            "schemaChars": 1049,
             "propertiesCount": 12
           },
           {
@@ -215,9 +287,15 @@
           },
           {
             "name": "cron",
-            "summaryChars": 2689,
-            "schemaChars": 581,
+            "summaryChars": 3570,
+            "schemaChars": 6327,
             "propertiesCount": 13
+          },
+          {
+            "name": "image_generate",
+            "summaryChars": 435,
+            "schemaChars": 1171,
+            "propertiesCount": 10
           },
           {
             "name": "sessions_list",
@@ -257,14 +335,14 @@
           },
           {
             "name": "session_status",
-            "summaryChars": 207,
+            "summaryChars": 262,
             "schemaChars": 89,
             "propertiesCount": 2
           },
           {
             "name": "web_search",
             "summaryChars": 123,
-            "schemaChars": 742,
+            "schemaChars": 549,
             "propertiesCount": 7
           },
           {
@@ -288,13 +366,18 @@
         ]
       }
     },
-    "cacheRead": 0,
+    "cacheRead": 15358,
     "cacheWrite": 0,
     "totalTokensFresh": true,
+    "status": "done",
+    "startedAt": 1775441194557,
     "contextTokens": 1048576,
-    "inputTokens": 71117,
-    "outputTokens": 954,
-    "totalTokens": 12614
+    "inputTokens": 51636,
+    "outputTokens": 453,
+    "estimatedCostUsd": 0.05121956999999999,
+    "totalTokens": 17111,
+    "endedAt": 1775441203449,
+    "runtimeMs": 8892
   },
   "agent:main:telegram:direct:7072628280": {
     "origin": {

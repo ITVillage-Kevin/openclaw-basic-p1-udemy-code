@@ -6,7 +6,7 @@ This folder is home. Treat it that way.
 
 If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again.
 
-## Every Session
+## Session Startup
 
 Before doing anything else:
 
@@ -45,7 +45,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
-## Safety
+## Red Lines
 
 - Don't exfiltrate private data. Ever.
 - Don't run destructive commands without asking.
@@ -210,18 +210,3 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
-
-## 오류 및 반복 실행 지침
-- 동일한 도구(Tool)를 3회 이상 호출했음에도 불구하고 상태가 해결되지 않거나 동일한 오류가 발생한다면, 즉시 실행을 중단하라.
-- 중단 후에는 사용자에게 현재 발생한 오류 메시지를 그대로 전달하고, "수동 확인이 필요합니다"라고 보고한 뒤 다음 지시를 기다려라.
-- 절대 사용자에게 동일한 분석 결과를 반복해서 전송하거나 무한 루프에 빠지지 마라.
-
-## 경로 및 작업 기준
-- 너의 현재 작업 디렉토리는 항상 `/workspace/`이다.
-- 모든 파일 및 폴더 접근 시 상대 경로가 아닌 `/workspace/`로 시작하는 절대 경로를 사용하라.
-- 예: `receipts` 폴더 확인 시 `ls /workspace/receipts` 명령을 사용하라.
-- 사용자가 "workspace/폴더명"이라고 말하더라도, 너는 이미 workspace 내부에 있음을 인지하고 `/workspace/폴더명`으로 해석하라.
-
-## 작업 수행 폴더 지침
-모든 파일 작업은 반드시 절대 경로인 /workspace/를 기준으로 수행하라. 
-폴더 존재 여부를 확인할 때는 ls -R /workspace 명령어를 사용하여 전체 구조를 먼저 파악하라.
