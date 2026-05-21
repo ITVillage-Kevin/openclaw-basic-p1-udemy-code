@@ -52,14 +52,8 @@
       }
     }
   },
-  "wizard": {
-    "lastRunAt": "2026-05-20T23:27:04.253Z",
-    "lastRunVersion": "2026.5.19",
-    "lastRunCommand": "onboard",
-    "lastRunMode": "local"
-  },
   "meta": {
     "lastTouchedVersion": "2026.5.19",
-    "lastTouchedAt": "2026-05-20T23:27:04.376Z"
+    "lastTouchedAt": "2026-05-20T23:24:42.388Z"
   }
 }
