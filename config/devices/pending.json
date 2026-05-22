@@ -1,0 +1,20 @@
+{
+  "00d010d7-5854-4178-add5-6b9d3bd51b2b": {
+    "requestId": "00d010d7-5854-4178-add5-6b9d3bd51b2b",
+    "deviceId": "9f7d8ef06a20067f1127931e84515a8fce3cd9f1c67255dc69787f1bba173821",
+    "publicKey": "BdNJmmw9LLj6PWj77vITpjxkeBEfebA2qjHXVmlPef8",
+    "platform": "linux",
+    "clientId": "cli",
+    "clientMode": "cli",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin"
+    ],
+    "silent": false,
+    "isRepair": true,
+    "ts": 1779408172572
+  }
+}
