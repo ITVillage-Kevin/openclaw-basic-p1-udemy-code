@@ -4,7 +4,7 @@
     "google:default": {
       "type": "api_key",
       "provider": "google",
-      "key": "AIzaSyDoBPb9mNouPOmtEHQUHf24u_MM0lMclPM"
+      "key": ""
     }
   }
 }
