@@ -6,6 +6,7 @@ services:
       - NODE_ENV=production
       - OPENCLAW_GATEWAY_TOKEN=${OPENCLAW_GATEWAY_TOKEN}
       - OPENCLAW_GATEWAY_MODE=${OPENCLAW_GATEWAY_MODE}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
     volumes:
       - ${OPENCLAW_CONFIG_DIR}:/home/node/.openclaw
       - ${OPENCLAW_WORKSPACE_DIR}:/home/node/workspace
