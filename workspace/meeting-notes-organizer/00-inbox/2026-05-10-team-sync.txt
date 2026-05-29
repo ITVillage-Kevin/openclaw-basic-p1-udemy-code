@@ -1,0 +1,32 @@
+Team Sync Meeting
+Date: 2026-05-10
+Time: 10:00 AM
+Location: Zoom
+
+Attendees:
+- Emma Lee
+- Daniel Kim
+- Sophia Patel
+- Ryan Chen
+
+Main Topics:
+- Weekly project progress
+- Open tasks from last week
+- Documentation cleanup
+- Next internal milestone
+
+Notes:
+The team reviewed the current status of the Meeting Notes Organizer project.
+Emma said the folder structure was clear enough for new users, but the team agreed that the reference documents should be more detailed.
+Daniel mentioned that some meeting note files were named inconsistently in earlier drafts, so a naming guide was added to the reference folder.
+Sophia said the next important step is generating a short summary report from the inbox notes.
+Ryan suggested keeping the output folder empty for now so students can clearly see that report generation has not happened yet.
+
+Action Items:
+- Emma: review reference documents for clarity
+- Daniel: double-check naming consistency
+- Sophia: draft summary categories for future reports
+- Ryan: keep sample structure simple for Lecture 13
+
+Next Step:
+Prepare the sample folder for exploration before moving on to summary report generation.
