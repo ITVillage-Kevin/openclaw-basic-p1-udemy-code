@@ -4,7 +4,7 @@
     "google:default": {
       "type": "api_key",
       "provider": "google",
-      "key": ""
+      "key": "<YOUR-GEMINI-API-KEY>"
     }
   }
 }
