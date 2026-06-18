@@ -1,65 +1,13 @@
 {
   "gateway": {
-    "mode": "local",
-    "bind": "loopback",
-    "controlUi": {
-      "allowedOrigins": [
-        "http://localhost:3000",
-        "http://127.0.0.1:3000"
-      ],
-      "allowInsecureAuth": true
-    },
-    "auth": {
-      "mode": "token",
-      "token": "demo-token"
-    },
-    "port": 18789,
-    "tailscale": {
-      "mode": "off",
-      "resetOnExit": false
-    }
-  },
-  "agents": {
-    "defaults": {
-      "workspace": "/home/node/.openclaw/workspace",
-      "model": {
-        "primary": "google/gemini-2.5-flash"
-      },
-      "models": {
-        "google/gemini-3.1-pro-preview": {},
-        "google/gemini-2.5-flash": {}
-      }
-    }
-  },
-  "session": {
-    "dmScope": "per-channel-peer"
-  },
-  "tools": {
-    "profile": "coding"
-  },
-  "plugins": {
-    "entries": {
-      "google": {
-        "enabled": true
-      }
-    }
-  },
-  "auth": {
-    "profiles": {
-      "google:default": {
-        "provider": "google",
-        "mode": "api_key"
-      }
-    }
-  },
-  "wizard": {
-    "lastRunAt": "2026-05-20T23:27:04.253Z",
-    "lastRunVersion": "2026.5.19",
-    "lastRunCommand": "onboard",
-    "lastRunMode": "local"
-  },
-  "meta": {
-    "lastTouchedVersion": "2026.5.19",
-    "lastTouchedAt": "2026-05-20T23:27:04.376Z"
+	  "mode": "local",
+	  "bind": "loopback",
+	  "controlUi": {
+		  "allowedOrigins": [
+			"http://localhost:3000",
+			"http://127.0.0.1:3000"
+		  ]
+	  }
   }
 }
+
